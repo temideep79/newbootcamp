@@ -1,0 +1,599 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.container {
+  margin: 20px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-01 {
+  background-color: #032ca8;
+  position: relative;
+  height: 150px;
+  max-width: 300px;
+  margin: 10px;
+  flex: 1;
+  border-radius: 5px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-02 {
+  background-color: #a80387;
+  position: relative;
+  height: 200px;
+  max-width: 460px;
+  margin: 10px;
+  flex: 1;
+  border-radius: 5px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-03 {
+  background-color: #8d03a8;
+  position: relative;
+  height: 300px;
+  max-width: 940px;
+  margin: 10px;
+  flex: 1;
+  border-radius: 5px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+  .card-01 {
+    flex: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-01 {
+    flex: 100%;
+    max-width: 600px;
+  }
+
+  .card-02 {
+    flex: 100%;
+    max-width: 600px;
+  }
+
+  .card-03{
+    flex: 100%;
+    max-width: 600px;
+  }
+} */
+
+/* flex-start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "MuseoModerno", cursive;
+}
+
+.header-hero {
+  position: relative;
+
+  display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/innovation-header.jpg) center/cover no-repeat;
+  height: 100vh;
+}
+
+.logo-icon {
+  width: 60px;
+  margin: 0px 0 20px 0;
+}
+
+.header-block {
+  width: 100%;
+  height: 200px;
+  background-color: #252525;
+  opacity: 0.7;
+}
+
+nav ul li {
+  color: #f9f8f8;
+  list-style-type: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  display: inline-block;
+  padding: 0px 5px 0;
+}
+
+.nav-links {
+  /* max-width: 100%; */
+  /* margin: 0 auto; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding: 40px 10px 20px;
+}
+
+/* title header */
+a {
+  display: block;
+}
+.header-title,
+h1 {
+  color: #f9f8f8;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  line-height: 1.1;
+
+  text-align: center;
+}
+
+.header-title p {
+  color: #f9f8f8;
+  margin: 0 0 10px 12px;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+}
+
+.header-title {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-0%, -50%);
+} */
+
+body {
+  width: 100%;
+}
+
+.btn-bg {
+  background-color: tomato;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn,
+a {
+  text-decoration: none;
+  color: #f9f8f8;
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+/* media query  header section*/
+
+@media (min-width: 700px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .header-block {
+    width: 100%;
+    height: 120px;
+    background-color: #252525;
+    opacity: 0.7;
+  }
+  .header-title p {
+    font-size: 1.5rem;
+    line-height: 0;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+  }
+
+  nav ul li {
+    font-size: 1.2rem;
+  }
+  .header-title {
+    margin-top: 200px;
+  }
+}
+
+/* our work section */
+
+.work-description {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.our-work h2 {
+  margin: 0 0 20px;
+}
+
+hr {
+  border: solid 2px tomato;
+  width: 50%;
+  margin: 50px auto;
+}
+
+/* end of work text */
+
+.our-work {
+  margin-top: 100px;
+}
+
+.our-work h2 {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.image-list {
+  width: 90%;
+  margin: 90px auto;
+}
+
+.image-list ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+/* start of work mQ */
+
+@media (min-width: 600px) {
+  .col-1 ul {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flx-1 {
+    flex: 1 0 45%;
+    padding-right: 0.5em;
+  }
+
+  .flx-2 {
+    flex: 1 0 45%;
+    padding-right: 0.5em;
+  }
+
+  .flx-3 {
+    flex: 1 0 45%;
+    padding-right: 0.5em;
+  }
+
+  .flx-4 {
+    flex: 1 0 45%;
+    padding-right: 0.5em;
+  }
+  .our-work h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .our-work p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 900px) {
+  .col-1 ul {
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flx-1 {
+    flex: 0 0 25%;
+    padding-right: 1em;
+  }
+
+  .flx-2 {
+    flex: 0 25%;
+    padding-right: 1em;
+  }
+
+  .flx-3 {
+    flex: 0 0 25%;
+    padding-right: 1em;
+  }
+
+  .flx-4 {
+    flex: 0 0 25%;
+    padding-right: 1em;
+  }
+}
+
+/* end  of work mQ */
+
+/* icon section */
+
+.icon h3 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.icon p {
+  font-size: 1rem;
+}
+
+.services-text {
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+}
+
+.services-text h2 {
+  font-size: 2rem;
+}
+
+.services-text h2 {
+  margin: 0 0 20px;
+}
+
+@media (min-width: 600px) {
+  .services-text {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .services-text {
+    max-width: 100%;
+  }
+}
+
+/* icon start */
+.icon-section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.icon-section {
+  text-align: center;
+}
+
+.gear {
+  font-size: 2.5rem;
+  color: tomato;
+}
+.services-text h2 {
+  font-size: 1.7rem;
+}
+
+.icon {
+  margin-bottom: 2rem;
+}
+.wrapper {
+  max-width: 600px;
+}
+
+@media (min-width: 900px) {
+  .icon-section {
+    display: flex;
+  }
+
+  .icon h3 {
+    margin: 0 0 20px;
+  }
+  .services-text p {
+    font-size: 1.2rem;
+  }
+
+  .services-text h2 {
+    font-size: 1.9rem;
+  }
+
+  .icon-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .wrapper p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .wrapper h3 {
+    font-size: 1.6rem;
+  }
+
+  .name-testimony p {
+    font-size: 5rem;
+  }
+}
+
+/* end of icon */
+
+.testimony {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.name-testimony {
+  margin: 100px;
+}
+
+.testimony-title h3 {
+  font-size: 1.6rem;
+}
+
+/* Testimony MQ */
+
+@media (min-width: 600px) {
+  .testimon {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  span {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .testimon {
+    width: 100%;
+  }
+  .testimony-title h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .name-testimony p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+}
+
+/* news letter section monile# */
+.news-letter {
+  text-align: center;
+}
+
+.news-letter h3 {
+  font-size: 1.5rem;
+}
+
+.news {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* form section */
+
+.form-flx {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.cont a {
+  color: black;
+  display: block;
+  font-size: 1.3rem;
+}
+
+input {
+  text-align: center;
+}
+
+.input-box {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.btn2 {
+  margin: 0 auto;
+  background-color: tomato;
+  margin: 0 auto;
+  width: 60%;
+  display: block;
+
+  border-radius: 4px;
+  text-align: center;
+}
+.btn-cent {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 300px;
+  height: 30px;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .btn-cent {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  .btn2 {
+    background-color: tomato;
+    width: 50%;
+  }
+  .input-box {
+    width: 30%;
+    padding: 30px;
+
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+
+  input::placeholder {
+    font-size: 1.2rem;
+  }
+}
+
+/* end of email section */
+
+.footer-bar{
+background-color: #252525;
+margin-top: 100px;
+
+}
+
+.footer-icons {
+
+display: flex;
+justify-content:space-around;
+align-items: center;
+
+}
+
+ul li{
+list-style-type: none;
+
+display: inline-block;
+padding: 10px;
+
+
+}
+
+.fa{
+font-size: 2rem;
+color: tomato;
+margin-top: 20px;
+
+}
+.footer-text p{
+text-align: center;
+color: #f9f8f8;
+padding: 50px;
+
+}
